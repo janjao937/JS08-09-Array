@@ -30,30 +30,43 @@ const sales = [
   const summary = [
     { netPrice: 900 }, 
     { netPrice: 475 },
-    { netPrice: 100 }
+    { netPrice: 100 },
   ];
 
-  //solution
-  // console.log(summary[0]);
-  // sales[0]["sales"] = sales[0].price* sales[0].discount;
-  // console.log( sales[0]);
+  /*solution
+     console.log(summary[0]);
+     sales[0]["sales"] = sales[0].price* sales[0].discount;
+     console.log( sales[0]);
+  */
 
+  const netPrice =[];
   for(let i = 0; i< sales.length;i++)
   {
     let discount = sales[i]?.discount?sales[i].discount:1;
     if(!sales[i]?.discount)
     {
-      summary[i]["netPrice"] = sales[i].price;
+      netPrice[i] = sales[i].price;
       continue; 
     }
     //Discount
-    summary[i]["netPrice"] = sales[i].price*discount;
+    netPrice[i] = sales[i].price*(1-discount);
   }
 
-  console.log(summary);
+  console.log(netPrice);
 
   /*[
   { netPrice: 100 },
   { netPrice: 25 },
   { netPrice: 100 }
 ]*/
+
+
+//TeacherCode//
+const tR = [];
+
+sales.forEach((e)=>{;
+
+  let newValue = e.price * (1-(e.discount|| 0));
+  tR.push({newValue});//shot hand
+});
+console.log(tR);
