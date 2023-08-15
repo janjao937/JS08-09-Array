@@ -21,44 +21,41 @@ const summary = [
 
 ```*/
 
-const sales = [
-    { price: 1000, discount: 0.1 },
-    { price: 500, discount: 0.05 },
-    { price: 100 }
-  ];
+//out put
+// const summary = [
+  //   { netPrice: 900 }, 
+  //   { netPrice: 475 },
+  //   { netPrice: 100 },
+  // ];
   
-  const summary = [
-    { netPrice: 900 }, 
-    { netPrice: 475 },
-    { netPrice: 100 },
-  ];
-
   /*solution
-     console.log(summary[0]);
-     sales[0]["sales"] = sales[0].price* sales[0].discount;
-     console.log( sales[0]);
+  console.log(summary[0]);
+  sales[0]["sales"] = sales[0].price* sales[0].discount;
+  console.log( sales[0]);
   */
-
-  const netPrice =[];
+ 
+ const sales = [
+     { price: 1000, discount: 0.1 },
+     { price: 500, discount: 0.05 },
+     { price: 100 }
+   ];
+   
+  const r =[];
   for(let i = 0; i< sales.length;i++)
   {
     let discount = sales[i]?.discount?sales[i].discount:1;
+
     if(!sales[i]?.discount)
     {
-      netPrice[i] = sales[i].price;
+      r[i] ={ netPrice:sales[i].price};
       continue; 
     }
     //Discount
-    netPrice[i] = sales[i].price*(1-discount);
+    r[i] = {netPrice:sales[i].price*(1-discount)};
   }
+  console.log(r);
 
-  console.log(netPrice);
 
-  /*[
-  { netPrice: 100 },
-  { netPrice: 25 },
-  { netPrice: 100 }
-]*/
 
 
 //TeacherCode//
