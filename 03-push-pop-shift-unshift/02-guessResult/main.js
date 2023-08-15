@@ -1,0 +1,4 @@
+
+//alert(this);
+
+//this = array
