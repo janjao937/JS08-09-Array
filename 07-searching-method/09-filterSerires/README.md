@@ -2,37 +2,37 @@
 
 
 ```js
-const array = [9, 17, 23, 5];
+const array1 = [9, 17, 23, 5];
 // ค่าที่มากกว่า 10
 
 
-const array = [1, 2, 3, 4];
+const arra2 = [1, 2, 3, 4];
 // ค่าที่เป็นเลขคี่
 
 
-const array = [1, '1', 2, {}];
+const array3 = [1, '1', 2, {}];
 // ค่าที่ประเภทข้อมูลเป็น Number
 
-const array = ['apple', 'banana', 'orange', 'pineapple', 'watermeon'];
+const array4 = ['apple', 'banana', 'orange', 'pineapple', 'watermeon'];
 // ค่าที่มีตัวอักษรมากกว่า 6 ตัว
 
 
-const array = [1, -3, 2, 8, -4, 5];
+const array5 = [1, -3, 2, 8, -4, 5];
 // ค่าที่เป็นเลขบวก
 
-const array = [1, 3, 4, 5, 6, 7, 8];
+const array6 = [1, 3, 4, 5, 6, 7, 8];
 // ค่าที่หาร 3 ลงตัว
 
-const array = ['Elephant', 'Ant', 'Cat', 'Eagle', 'Zebra'];
+const array7 = ['Elephant', 'Ant', 'Cat', 'Eagle', 'Zebra'];
 // ค่าที่ขึ้นต้นด้วยตัว E
 
-const array = ['APPLE', 'oRanGE', 'PEACH', 'PaPAYA'];
+const array8 = ['APPLE', 'oRanGE', 'PEACH', 'PaPAYA'];
 // ค่าที่เป็นตัวพิมพ์ใหญ่ทั้งหมด
 
-const array = ['Krabi', 'Chonburi', 'Buriram', 'Saraburi','Phrae'];
+const array9 = ['Krabi', 'Chonburi', 'Buriram', 'Saraburi','Phrae'];
 // ค่าที่มีคำว่า buri เป็นส่วนประกอบโดยไม่สนใจตัวพิมพ์เล็กหรือตัวพิมพ์ใหญ่
 
-const array = [
+const array10 = [
   { name: 'Ben', age: 14 },
   { name: 'Phil', age: 18 },
   { name: 'John', age: 32 },
@@ -42,7 +42,7 @@ const array = [
 // อายุไม่น้อยกว่า 18 
 
 
-const array = [
+const array11 = [
   { id: 1, name: 'Pepsi' },
   { id: 2, name: 'Mirinda' },
   { id: 3, name: 'Coke' },
@@ -51,7 +51,7 @@ const array = [
 ];
 // id ไม่เท่ากับ 4
 
-const array = [
+const array12 = [
   { name: 'John', birth: '2001-07-31' },
   { name: 'Jack', birth: '1990-06-24' },
   { name: 'Jim', birth: '1984-12-13' },

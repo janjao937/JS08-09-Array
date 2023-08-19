@@ -9,7 +9,7 @@
 // console.log(first([7, 9, 0, -2], 3)); // [7, 9 ,0]
 // ```
 
-//งงโจทย์ในตอนแรก ถ้า undifined return 1
+//Before Know Slice
 const first = (arr,n=1) => 
 {
     if(arr.length < 0) return arr;
@@ -18,12 +18,11 @@ const first = (arr,n=1) =>
     {  
         if(arr[i]=== void 0)
         {
-          r[i] = 1; 
+          //r[i] = 1; 
           continue;
         }
         r[i] = arr[i];
     }
-
     return r;
 }
 
@@ -32,7 +31,7 @@ console.log(first([], 3));
 console.log(first([7, 9, 0, -2], 3));
 
 //Slide
-function Fir(arr,n)
+function Fir(arr,n = 1)
 {
   return arr.slice(0,n);
 }
@@ -40,3 +39,6 @@ function Fir(arr,n)
 console.log(Fir([7, 9, 0, -2],1)); 
 console.log(Fir([], 3)); 
 console.log(Fir([7, 9, 0, -2], 3));
+
+//Teacher Code
+
